@@ -1,9 +1,9 @@
 Algorithm-Design
 ================
 
-Projects from the course Algorithms: Design and Analysis, Part 1 on Coursera.
+Projects from Stanford's *Algorithms: Design and Analysis, Part 1* course on Coursera.
 
-The link to the class can be found [here](https://class.coursera.org/algo-005).
+The link to the class can be found [here](https://www.coursera.org/course/algo).
 
 ---
 
