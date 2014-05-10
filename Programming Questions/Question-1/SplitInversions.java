@@ -10,17 +10,25 @@ import java.util.*;
  */
 public class SplitInversions {
 	
-	private static int countInversions(int[] intArray) {
+	private static int countInversions(List<Integer> intArray) {
+		return sortAndCount(intArray);
+	}
+	
+	private static int sortAndCount(List<Integer> intArray) {
+		if (intArray.size() == 1) {
+			return 0;
+		}
+		
 		return 0;
 	}
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
 		Scanner input = new Scanner(new File("IntegerArray.txt"));
-		int[] intArray = new int[100000];
+		ArrayList<Integer> intArray = new ArrayList<Integer>(100000);
 		
-		for (int i = 0; i < intArray.length; i++) {
-			intArray[i] = input.nextInt();
+		while(input.hasNextInt()) {
+			intArray.add(input.nextInt());
 		}
 		
 		int splitInversions = countInversions(intArray);
