@@ -11,15 +11,21 @@ import java.util.*;
 public class SplitInversions {
 	
 	private static int countInversions(List<Integer> intArray) {
-		return sortAndCount(intArray);
+		return sortAndCount(intArray, 0);
 	}
 	
-	private static int sortAndCount(List<Integer> intArray) {
+	private static int sortAndCount(List<Integer> intArray, int inversions) {
 		if (intArray.size() == 1) {
 			return 0;
 		}
+		else {
+			return mergeAndCount(intArray.subList(0, intArray.size()/2),
+					intArray.subList(intArray.size()/2, intArray.size()));
+		}
+	}
+	
+	private static int mergeAndCount(List<Integer> left, List<Integer> right) {
 		
-		return 0;
 	}
 
 	public static void main(String[] args) throws FileNotFoundException {
