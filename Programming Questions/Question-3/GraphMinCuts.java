@@ -19,8 +19,6 @@ public class GraphMinCuts {
 			parseLine.close();
 		}
 		
-		System.out.println(graph);
-		
 		input.close();
 		
 	}
